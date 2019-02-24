@@ -1,0 +1,51 @@
+/*Failed Attempt*/
+
+
+body{
+    background-color: #f4f4f4;
+    height: 100vh;
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+}
+
+#gpd_logo{
+    transform: scale(0, 6); 
+
+    span{
+        display; block; 
+        position: relative;
+        width: 30mvin; 
+        height: 30mvin;
+        background: linear-gradient(to right top, #20bf6b, #20bf6b 50%, transparent); 
+        transform: rotate(-45deg); 
+        margin-top: -50vmin; 
+
+        &:: before, 
+        &:: after,{
+            display: block; 
+            position: absolute; 
+            content: '';
+        }
+
+        &:: before{
+            background: linear-gradient(to right top, #4b6584, #4b6584 50%, transparent 50%, transparent); 
+            width: 50vmin; 
+            height: 50vmin; 
+            top: 15vmin;
+            left: 15vmin; 
+            z-index: 1;
+        }
+
+        &:: after{ 
+                background-color: #f4f4f4; 
+                width: 20vmin;
+                height: 20vmin;
+                top: 30vmin; 
+                width: 30vmin; 
+                z-index: 2; 
+        }
+    }
+}
